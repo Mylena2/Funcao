@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros para mega sena</title>
+    <link rel="stylesheet" href="funcao.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Geração de Números Aleatórios</title>
+</head>
+<body>
+  <h1>Geração de Números Aleatórios para Mega Sena</h1>
+  <button id="gerarBtn">Gerar Sequência</button>
+  <p id="sequencia"></p>
+
+  <script>
+    function gerarNumerosMegaSena() {
+      var numeros = new Set();
+
+      while (numeros.size < 6) {
+        var numeroAleatorio = Math.floor(Math.random() * 60) + 1;
+        numeros.add(numeroAleatorio);
+      }
+
+      return Array.from(numeros);
+    }
+
+    var gerarBtn = document.getElementById("gerarBtn");
+    var sequenciaElement = document.getElementById("sequencia");
+
+    gerarBtn.addEventListener("click", function() {
+      var sequenciaAleatoria = gerarNumerosMegaSena();
+      sequenciaElement.textContent = "Números gerados para a Mega Sena: " + sequenciaAleatoria.join(", ");
+    });
+  </script>
+</body>
+</html>
+</body>
+</html>

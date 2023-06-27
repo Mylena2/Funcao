@@ -1,0 +1,28 @@
+
+.navegar {
+    background-color: #fc89f2;
+    color: #fff;
+    padding: 20px;
+}
+
+.navegar h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navegar h2 {
+    margin: 20px 0 10px;
+    font-size: 18px;
+}
+
+.navegar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.navegar a:hover {
+    text-decoration: underline;
+}
